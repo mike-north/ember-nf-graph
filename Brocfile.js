@@ -5,6 +5,11 @@ var EmberAddon = require('ember-cli/lib/broccoli/ember-addon');
 
 var app = new EmberAddon();
 
+app.import({
+  development: 'bower_components/d3/d3.js',
+  production:  'bower_components/d3/d3.min.js'
+});
+
 // Use `app.import` to add additional libraries to the generated
 // output files.
 //
